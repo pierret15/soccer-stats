@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Soccer Manager</title>
+    {% load static %}
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'/>    
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'/> 
+    <link rel="stylesheet" href="{% static 'soccermanager/styles.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="info-container">
+            <span class="website-title">
+                Soccer Manager
+            </span>
+        </div>
+        <div class="links-container">
+            <a href="{% url 'home' %}"><pan>Home</pan></a>
+        </div>
+    </div>
+{% block content %}
+
+{% endblock content%}
+</body>
+</html>

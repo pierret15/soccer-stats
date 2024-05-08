@@ -1,0 +1,68 @@
+#root, body{
+    background-color: #070F2B;
+    color:white;
+    margin: 0;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5{
+    font-family: "Outfit";
+}
+p,span,a{
+    font-family: "Roboto";
+}
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #1B1A55;
+    padding:2em;
+}
+.website-title{
+    display: inline;
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.leagues-container-index,.players-container-index,.teams-container-index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+}
+.leagues-container,.players-container,.teams-container{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 8px;
+}
+
+.league-container,.team-container,.player-container{
+    background-color:#3D3B6D;
+    border: 2px solid #9290C3;
+    border-radius:4px;
+    color:white;
+    padding:12px 16px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 10px
+
+}
+
+.header{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+/* .info-container{
+
+}
+.links-container{
+
+} */

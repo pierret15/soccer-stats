@@ -1,0 +1,43 @@
+{% extends 'soccermanager/main.html' %}
+
+{% block content %}
+    <div>
+        <h3 class="header">Leagues</h3>
+        <div class="leagues-container-index">
+            {% for league in leagues %}
+            <a href="/league/{{league.leagueId}}">
+                <div class="league-container">
+                    <span>{{league.name}}</span>
+                </div>
+            </a>
+            {% endfor %}    
+        </div>
+    </div>
+
+    <div>
+        <h3 class="header">Teams</h3>
+        <div class="teams-container-index">
+            {% for team in teams %}
+            <a href="/team/{{team.teamId}}">
+                <div class = "team-container">
+                    <span>{{team.name}}</span>
+                </div>
+            </a>
+            {% endfor %}
+                
+    </div>
+
+    <div>
+        <h3 class="header">Players</h3>
+        <div class="players-container-index">
+            {% for player in players %}
+            <a href="/player/{{player.playerId}}">
+                <div class = "player-container">
+                    <span>{{player.name}}</span>
+                </div>
+            </a>
+            {% endfor %}
+                
+    </div>
+{% endblock content %}
+    

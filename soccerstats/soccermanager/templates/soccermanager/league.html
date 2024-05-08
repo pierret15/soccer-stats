@@ -1,0 +1,16 @@
+{% extends 'soccermanager/main.html' %}
+
+{% block content %}
+    <div>
+        <h3>{{name}}</h3>
+        <span>Teams</span>
+        <div class="teams-container">
+            {% for team in teams %}
+                <div class="team-container">
+                    <span>{{team.name}}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}
+    
